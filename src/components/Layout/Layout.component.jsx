@@ -11,6 +11,9 @@ import Avatar from "../Avatar/Avatar.component";
 
 import DotIcon from "../../images/Dot.svg";
 import PieIcon from "../../images/PieChart.svg";
+import ShoppingIcon from "../../images/ShoppingBagOpen.svg";
+import FolderIcon from "../../images/FolderNotch.svg";
+import BookIcon from "../../images/BookOpen.svg";
 import WrenchIcon from "../../images/Wrench.svg";
 
 import style from "./Layout.module.scss";
@@ -30,6 +33,17 @@ function Layout() {
 
         <SidebarContainer text="Dashboards">
           <SidebarDropdown text="Default" icon={PieIcon}>
+            <SidebarItem text="Something" />
+          </SidebarDropdown>
+          <SidebarDropdown
+            text="Default"
+            icon={ShoppingIcon}>
+            <SidebarItem text="Something" />
+          </SidebarDropdown>
+          <SidebarDropdown text="Default" icon={FolderIcon}>
+            <SidebarItem text="Something" />
+          </SidebarDropdown>
+          <SidebarDropdown text="Default" icon={BookIcon}>
             <SidebarItem text="Something" />
           </SidebarDropdown>
         </SidebarContainer>
