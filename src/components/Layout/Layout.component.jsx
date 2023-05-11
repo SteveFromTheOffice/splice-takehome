@@ -82,9 +82,25 @@ function Layout() {
       <LayoutSidebar>
         <SidebarContainer text="Notifications">
           <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
         </SidebarContainer>
-        <SidebarContainer text="Activities"></SidebarContainer>
-        <SidebarContainer text="Contacts"></SidebarContainer>
+        <SidebarContainer text="Activities">
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
+        </SidebarContainer>
+        <SidebarContainer text="Contacts">
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
+          <Avatar />
+        </SidebarContainer>
       </LayoutSidebar>
       <main>
         <Outlet />

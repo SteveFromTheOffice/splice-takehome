@@ -7,10 +7,10 @@
     "left main right";
   grid-template-columns: 200px 1fr 300px;
   grid-template-rows: 70px 1fr;
-  height: 100vh;
+  min-height: 100vh;
   transition: grid-template-columns 0.5s ease-in-out;
 
-  @media only screen and (max-width: $md) {
+  @media only screen and (max-width: $lg) {
     grid-template-columns: 0px 1fr 0px;
     transition: grid-template-columns 0.5s ease-in-out;
   }
