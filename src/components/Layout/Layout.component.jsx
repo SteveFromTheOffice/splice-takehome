@@ -14,6 +14,12 @@ import PieIcon from "../../images/PieChart.svg";
 import ShoppingIcon from "../../images/ShoppingBagOpen.svg";
 import FolderIcon from "../../images/FolderNotch.svg";
 import BookIcon from "../../images/BookOpen.svg";
+
+import ProfileIcon from "../../images/IdentificationBadge.svg";
+import AccountIcon from "../../images/IdentificationCard.svg";
+import CorpIcon from "../../images/UsersThree.svg";
+import BlogIcon from "../../images/Notebook.svg";
+import SocialIcon from "../../images/ChatsTeardrop.svg";
 import WrenchIcon from "../../images/Wrench.svg";
 
 import style from "./Layout.module.scss";
@@ -35,20 +41,37 @@ function Layout() {
           <SidebarDropdown text="Default" icon={PieIcon}>
             <SidebarItem text="Something" />
           </SidebarDropdown>
-          <SidebarDropdown
-            text="Default"
-            icon={ShoppingIcon}>
+          <SidebarDropdown text="eCommerce" icon={ShoppingIcon}>
             <SidebarItem text="Something" />
           </SidebarDropdown>
-          <SidebarDropdown text="Default" icon={FolderIcon}>
+          <SidebarDropdown text="Projects" icon={FolderIcon}>
             <SidebarItem text="Something" />
           </SidebarDropdown>
-          <SidebarDropdown text="Default" icon={BookIcon}>
+          <SidebarDropdown text="Online Courses" icon={BookIcon}>
             <SidebarItem text="Something" />
           </SidebarDropdown>
         </SidebarContainer>
 
         <SidebarContainer text="Pages">
+          <SidebarDropdown text="User Profile" icon={ProfileIcon}>
+            <SidebarItem text="Overview" />
+            <SidebarItem text="Projects" />
+            <SidebarItem text="Campaigns" />
+            <SidebarItem text="Documents" />
+            <SidebarItem text="Followers" />
+          </SidebarDropdown>
+          <SidebarDropdown text="Account" icon={AccountIcon}>
+            <SidebarItem text="Something" />
+          </SidebarDropdown>
+          <SidebarDropdown text="Corporate" icon={CorpIcon}>
+            <SidebarItem text="Something" />
+          </SidebarDropdown>
+          <SidebarDropdown text="Blog" icon={BlogIcon}>
+            <SidebarItem text="Something" />
+          </SidebarDropdown>
+          <SidebarDropdown text="Social" icon={SocialIcon}>
+            <SidebarItem text="Calculator" />
+          </SidebarDropdown>
           <SidebarDropdown text="Tools" icon={WrenchIcon}>
             <SidebarItem text="Calculator" />
           </SidebarDropdown>

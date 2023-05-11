@@ -8,6 +8,7 @@ import ClockIcon from "../../images/ClockCounterClockwise.svg";
 import BellIcon from "../../images/Bell.svg";
 
 import style from "./LayoutHeader.module.scss";
+import Search from "../Search/Search.component";
 
 function LayoutHeader() {
   return (
@@ -15,7 +16,7 @@ function LayoutHeader() {
       <Button icon={SidebarIcon} alt="" />
       <Button icon={StarIcon} alt="" />
       <Breadcrumb />
-      <div>Search</div>
+      <Search />
       <Button icon={SunIcon} alt="" />
       <Button icon={ClockIcon} alt="" />
       <Button icon={BellIcon} alt="" />
