@@ -4,5 +4,5 @@
   display: flex;
   gap: 20px;
   grid-area: head;
-  padding: 0 2vw;
+  padding: 0 calc(12px + 1vw);
 }

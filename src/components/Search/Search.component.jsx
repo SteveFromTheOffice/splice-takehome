@@ -16,7 +16,7 @@ function Search() {
         </button>
       </form>
       <div className={style.searchBtn}>
-        <Badge icon={SearchIcon} />
+        <Badge icon={SearchIcon} alt="" />
       </div>
     </>
   );

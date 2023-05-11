@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 20px;
 
-  content {
+  > main {
     display: flex;
     flex-direction: column;
     gap: 10px;

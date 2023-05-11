@@ -23,14 +23,22 @@ import SocialIcon from "../../images/ChatsTeardrop.svg";
 import WrenchIcon from "../../images/Wrench.svg";
 
 import style from "./Layout.module.scss";
+import {useDispatch, useSelector} from "react-redux";
+import {UiActions} from "../../stores/uiSlice";
 
 function Layout() {
+  const dispatch = useDispatch();
+  const isLeftFlyoutOpen = useSelector((state) => state.ui.isLeftFlyoutOpen);
+  const isRightFlyoutOpen = useSelector((state) => state.ui.isRightFlyoutOpen);
+
   return (
     <div className={style.layout}>
       <LayoutHeader />
 
       {/* Left Sidebar */}
-      <LayoutSidebar>
+      <LayoutSidebar
+        isOpen={isLeftFlyoutOpen}
+        onMouseOut={() => dispatch(UiActions.toggleLeftSidebar())}>
         <Brand />
         <SidebarContainer text="Favorites">
           <SidebarItem text="Overview" icon={DotIcon} />
@@ -70,7 +78,7 @@ function Layout() {
             <SidebarItem text="Something" />
           </SidebarDropdown>
           <SidebarDropdown text="Social" icon={SocialIcon}>
-            <SidebarItem text="Calculator" />
+            <SidebarItem text="Something" />
           </SidebarDropdown>
           <SidebarDropdown text="Tools" icon={WrenchIcon}>
             <SidebarItem text="Calculator" />
@@ -79,7 +87,9 @@ function Layout() {
       </LayoutSidebar>
 
       {/* Right Sidebar */}
-      <LayoutSidebar>
+      <LayoutSidebar
+        isOpen={isRightFlyoutOpen}
+        onMouseOut={() => dispatch(UiActions.toggleRightSidebar())}>
         <SidebarContainer text="Notifications">
           <Avatar />
           <Avatar />
@@ -102,6 +112,7 @@ function Layout() {
           <Avatar />
         </SidebarContainer>
       </LayoutSidebar>
+
       <main>
         <Outlet />
       </main>

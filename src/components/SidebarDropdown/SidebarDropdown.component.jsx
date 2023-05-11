@@ -21,7 +21,7 @@ function SidebarDropdown(props) {
         <img src={props.icon} alt={props.alt} />
         <div>{props.text}</div>
       </header>
-      {isOpen ? <content>{props.children}</content> : null}
+      {isOpen ? <main>{props.children}</main> : null}
     </section>
   );
 }
