@@ -1,15 +1,20 @@
+import ArrowIcon from "../../images/ArrowRight.svg";
+
 import style from "./SidebarDropdown.module.scss";
 
 function SidebarDropdown(props) {
   return (
-    <div className={style.dropdown}>
-      <h4>
-        <img src="#" alt={props.alt} />
-        <img src="#" alt={props.alt} />
+    <section className={style.dropdown}>
+      <header>
+        <img
+          src={ArrowIcon}
+          alt="arrow pointing to the right"
+        />
+        <img src={props.icon} alt={props.alt} />
         <div>{props.text}</div>
-      </h4>
+      </header>
       <content>{props.children}</content>
-    </div>
+    </section>
   );
 }
 

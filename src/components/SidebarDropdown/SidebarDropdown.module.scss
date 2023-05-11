@@ -1,2 +1,14 @@
 .dropdown {
+  header {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+  }
+
+  content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 21px;
+    margin-top: 5px;
+  }
 }

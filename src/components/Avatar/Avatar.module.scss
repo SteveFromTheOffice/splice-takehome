@@ -1,0 +1,17 @@
+.avatar {
+  main {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+
+    img {
+      border-radius: 40%;
+      height: 24px;
+      width: 24px;
+    }
+  }
+
+  aside {
+    margin-left: 29px;
+  }
+}
