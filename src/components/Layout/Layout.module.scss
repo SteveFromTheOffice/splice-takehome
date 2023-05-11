@@ -1,0 +1,29 @@
+@import "../../styles/mixins.scss";
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    "left head right"
+    "left main right";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 70px 1fr;
+  height: 100vh;
+  transition: grid-template-columns 0.5s ease-in-out;
+
+  @media only screen and (max-width: $md) {
+    grid-template-columns: 0px 1fr 0px;
+    transition: grid-template-columns 0.5s ease-in-out;
+  }
+
+  aside:first-of-type {
+    grid-area: left;
+  }
+
+  aside:last-of-type {
+    grid-area: right;
+  }
+
+  main {
+    grid-area: main;
+  }
+}
