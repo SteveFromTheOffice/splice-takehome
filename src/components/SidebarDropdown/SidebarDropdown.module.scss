@@ -1,4 +1,7 @@
 .dropdown {
+  cursor: pointer;
+  user-select: none;
+
   header {
     align-items: center;
     display: flex;
@@ -11,4 +14,8 @@
     margin-left: 21px;
     margin-top: 5px;
   }
+}
+
+.open {
+  transform: rotate(90deg);
 }

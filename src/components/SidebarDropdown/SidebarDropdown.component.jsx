@@ -1,19 +1,27 @@
+import {useState} from "react";
 import ArrowIcon from "../../images/ArrowRight.svg";
 
 import style from "./SidebarDropdown.module.scss";
 
 function SidebarDropdown(props) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOnClick = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <section className={style.dropdown}>
-      <header>
+      <header onClick={handleOnClick}>
         <img
           src={ArrowIcon}
           alt="arrow pointing to the right"
+          className={isOpen ? style.open : null}
         />
         <img src={props.icon} alt={props.alt} />
         <div>{props.text}</div>
       </header>
-      <content>{props.children}</content>
+      {isOpen ? <content>{props.children}</content> : null}
     </section>
   );
 }
