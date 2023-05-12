@@ -1,9 +1,11 @@
+import {ReactComponent as StarIcon} from "../../images/Star.svg";
+
 import style from "./Brand.module.scss";
 
 function Brand() {
   return (
     <h1 className={style.brand}>
-      <img src="#" alt="Logo" />
+      <StarIcon alt="Logo" />
       <span>MS</span>
     </h1>
   );

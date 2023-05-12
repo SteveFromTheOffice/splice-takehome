@@ -9,18 +9,18 @@ import SidebarItem from "../SidebarItem/SidebarItem.component";
 import SidebarDropdown from "../SidebarDropdown/SidebarDropdown.component";
 import Avatar from "../Avatar/Avatar.component";
 
-import DotIcon from "../../images/Dot.svg";
-import PieIcon from "../../images/PieChart.svg";
-import ShoppingIcon from "../../images/ShoppingBagOpen.svg";
-import FolderIcon from "../../images/FolderNotch.svg";
-import BookIcon from "../../images/BookOpen.svg";
+import {ReactComponent as DotIcon} from "../../images/Dot.svg";
+import {ReactComponent as PieIcon} from "../../images/PieChart.svg";
+import {ReactComponent as ShoppingIcon} from "../../images/ShoppingBagOpen.svg";
+import {ReactComponent as FolderIcon} from "../../images/FolderNotch.svg";
+import {ReactComponent as BookIcon} from "../../images/BookOpen.svg";
 
-import ProfileIcon from "../../images/IdentificationBadge.svg";
-import AccountIcon from "../../images/IdentificationCard.svg";
-import CorpIcon from "../../images/UsersThree.svg";
-import BlogIcon from "../../images/Notebook.svg";
-import SocialIcon from "../../images/ChatsTeardrop.svg";
-import WrenchIcon from "../../images/Wrench.svg";
+import {ReactComponent as ProfileIcon} from "../../images/IdentificationBadge.svg";
+import {ReactComponent as AccountIcon} from "../../images/IdentificationCard.svg";
+import {ReactComponent as CorpIcon} from "../../images/UsersThree.svg";
+import {ReactComponent as BlogIcon} from "../../images/Notebook.svg";
+import {ReactComponent as SocialIcon} from "../../images/ChatsTeardrop.svg";
+import {ReactComponent as WrenchIcon} from "../../images/Wrench.svg";
 
 import style from "./Layout.module.scss";
 import {useDispatch, useSelector} from "react-redux";

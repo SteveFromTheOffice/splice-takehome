@@ -1,7 +1,7 @@
 import {useState} from "react";
 
-import LightIcon from "../../images/Light.svg";
-import DarkIcon from "../../images/Dark.svg";
+import {ReactComponent as LightIcon} from "../../images/Light.svg";
+import {ReactComponent as DarkIcon} from "../../images/Dark.svg";
 
 import style from "./InputToggle.module.scss";
 

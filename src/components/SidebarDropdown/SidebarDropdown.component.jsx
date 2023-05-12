@@ -1,5 +1,5 @@
 import {useState} from "react";
-import ArrowIcon from "../../images/ArrowRight.svg";
+import {ReactComponent as ArrowIcon} from "../../images/ArrowRight.svg";
 
 import style from "./SidebarDropdown.module.scss";
 
@@ -13,12 +13,8 @@ function SidebarDropdown(props) {
   return (
     <section className={style.dropdown}>
       <header onClick={handleOnClick}>
-        <img
-          src={ArrowIcon}
-          alt="arrow pointing to the right"
-          className={isOpen ? style.open : null}
-        />
-        <img src={props.icon} alt={props.alt} />
+        <ArrowIcon />
+        <props.icon />
         <div>{props.text}</div>
       </header>
       {isOpen ? <main>{props.children}</main> : null}

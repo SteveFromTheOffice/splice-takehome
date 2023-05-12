@@ -1,6 +1,6 @@
 import style from "./Search.module.scss";
 
-import SearchIcon from "../../images/Search.svg";
+import {ReactComponent as SearchIcon} from "../../images/Search.svg";
 import Badge from "../Badge/Badge.component";
 
 function Search() {
@@ -8,7 +8,7 @@ function Search() {
     <>
       <form className={style.search}>
         <button>
-          <img src={SearchIcon}></img>
+          <SearchIcon />
         </button>
         <input type="text" placeholder="Search" />
         <button>

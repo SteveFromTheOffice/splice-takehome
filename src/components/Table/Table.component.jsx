@@ -2,7 +2,7 @@ import Avatar from "../Avatar/Avatar.component";
 import Badge from "../Badge/Badge.component";
 import Search from "../Search/Search.component";
 
-import DotsIcon from "../../images/ThreeDots.svg";
+import {ReactComponent as DotsIcon} from "../../images/ThreeDots.svg";
 import style from "./Table.module.scss";
 
 export const TableStatus = {
