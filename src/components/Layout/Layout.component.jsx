@@ -42,47 +42,47 @@ function Layout() {
         onMouseOut={() => dispatch(UiActions.toggleLeftSidebar())}>
         <Brand />
         <SidebarContainer text="Favorites">
-          <SidebarItem text="Overview" icon={DotIcon} />
-          <SidebarItem text="Projects" icon={DotIcon} />
+          <SidebarItem text="Overview" icon={DotIcon} url="/dashboard/default/overview" />
+          <SidebarItem text="Projects" icon={DotIcon} url="/dashboard/projects/overview" />
         </SidebarContainer>
 
         <SidebarContainer text="Dashboards">
           <SidebarDropdown text="Default" icon={PieIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Overview" url="/dashboard/default/overview" />
           </SidebarDropdown>
           <SidebarDropdown text="eCommerce" icon={ShoppingIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Overview" url="/dashboard/ecommerce/overview" />
           </SidebarDropdown>
           <SidebarDropdown text="Projects" icon={FolderIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Overview" url="/dashboard/projects/overview" />
           </SidebarDropdown>
           <SidebarDropdown text="Online Courses" icon={BookIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Overview" url="/dashboard/courses/overview" />
           </SidebarDropdown>
         </SidebarContainer>
 
         <SidebarContainer text="Pages">
           <SidebarDropdown text="User Profile" icon={ProfileIcon}>
-            <SidebarItem text="Overview" />
-            <SidebarItem text="Projects" />
-            <SidebarItem text="Campaigns" />
-            <SidebarItem text="Documents" />
-            <SidebarItem text="Followers" />
+            <SidebarItem text="Overview" url="/pages/user/overview" />
+            <SidebarItem text="Projects" url="/pages/user/projects" />
+            <SidebarItem text="Campaigns" url="/pages/user/campaigns" />
+            <SidebarItem text="Documents" url="/pages/user/documents" />
+            <SidebarItem text="Followers" url="/pages/user/followers" />
           </SidebarDropdown>
           <SidebarDropdown text="Account" icon={AccountIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Something" url="/pages/account/something" />
           </SidebarDropdown>
           <SidebarDropdown text="Corporate" icon={CorpIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Something" url="/pages/corporate/something" />
           </SidebarDropdown>
           <SidebarDropdown text="Blog" icon={BlogIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Something" url="/pages/blog/something" />
           </SidebarDropdown>
           <SidebarDropdown text="Social" icon={SocialIcon}>
-            <SidebarItem text="Something" />
+            <SidebarItem text="Something" url="/pages/social/something" />
           </SidebarDropdown>
           <SidebarDropdown text="Tools" icon={WrenchIcon}>
-            <SidebarItem text="Calculator" />
+            <SidebarItem text="Calculator" url="/pages/tools/calculator" />
           </SidebarDropdown>
         </SidebarContainer>
       </LayoutSidebar>
@@ -91,6 +91,7 @@ function Layout() {
       <LayoutSidebar
         isOpen={isRightFlyoutOpen}
         onMouseOut={() => dispatch(UiActions.toggleRightSidebar())}>
+        {/* TODO : Pull this into a component and simulate API data */}
         <SidebarContainer text="Notifications">
           <Notification text="You have a bug that needs to be fixed." subtext="5m ago" />
           <Notification text="New user registered" subtext="1:23 AM" />

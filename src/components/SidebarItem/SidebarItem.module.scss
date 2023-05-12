@@ -1,4 +1,9 @@
 .item {
   display: flex;
   gap: 5px;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
