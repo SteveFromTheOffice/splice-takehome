@@ -2,6 +2,7 @@ import {useState} from "react";
 import {evaluate} from "mathjs";
 
 import style from "./Calculator.module.scss";
+import ToggleSlider from "../../components/InputToggle/InputToggle.component";
 
 function Calculator() {
   const [theme, setTheme] = useState("light");
@@ -47,7 +48,7 @@ function Calculator() {
 
   return (
     <div className={style.calculator}>
-      <input type="checkbox" checked={theme === "dark"} onChange={toggleTheme} />
+      <ToggleSlider />
       <input type="text" value={query} />
       <input type="text" value={value} />
       <button onClick={clearEquation}>C</button>

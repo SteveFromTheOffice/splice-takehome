@@ -1,12 +1,19 @@
 :root {
-  --theme-bg: #f1f2f3;
-  --theme-btn-op-text: #fff;
-  --theme-btn-op-bg: #4b5efc;
+  --theme-light-toggle: #d2d3da;
+  --theme-light-query: #999;
+  --theme-light-result: #000;
+  --theme-light-bg: #f1f2f3;
+  --theme-light-btn1: #fff;
+  --theme-light-col1: #000;
+  --theme-light-btn2: #d2d3da;
+  --theme-light-col2: #000;
+  --theme-light-btn3: #4b5efc;
+  --theme-light-col3: #fff;
 }
 
 .calculator {
   align-content: center;
-  background-color: #f1f2f3;
+  background-color: var(--theme-light-bg);
   display: grid;
   justify-content: center;
   gap: 8px;
@@ -22,30 +29,33 @@
     text-align: right;
   }
 
-  > input:nth-of-type(2) {
-    color: rgba(0, 0, 0, 0.4);
+  > input:nth-of-type(1) {
+    color: var(--theme-light-query);
     font-size: 40px;
   }
 
-  > input:last-of-type {
+  > input:nth-of-type(2) {
+    color: var(--theme-light-result);
     font-size: 96px;
   }
 
   > button {
-    background-color: #fff;
+    background-color: var(--theme-light-btn1);
     border: none;
     border-radius: 24px;
+    color: var(--theme-light-col1);
     font-size: 32px;
     height: 72px;
     width: 72px;
   }
 
   > button:nth-of-type(-n + 3) {
-    background-color: #d2d3da;
+    background-color: var(--theme-light-btn2);
+    color: var(--theme-light-col2);
   }
 
   > button:nth-of-type(4n) {
-    background-color: #4b5efc;
-    color: #fff;
+    background-color: var(--theme-light-btn3);
+    color: var(--theme-light-col3);
   }
 }
