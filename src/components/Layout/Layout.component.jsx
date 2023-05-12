@@ -25,6 +25,7 @@ import WrenchIcon from "../../images/Wrench.svg";
 import style from "./Layout.module.scss";
 import {useDispatch, useSelector} from "react-redux";
 import {UiActions} from "../../stores/uiSlice";
+import Notification from "../Notification/Notification.component";
 
 function Layout() {
   const dispatch = useDispatch();
@@ -91,17 +92,17 @@ function Layout() {
         isOpen={isRightFlyoutOpen}
         onMouseOut={() => dispatch(UiActions.toggleRightSidebar())}>
         <SidebarContainer text="Notifications">
-          <Avatar text="You have a bug that needs to be fixed." subtext="5m ago" />
-          <Avatar text="New user registered" subtext="1:23 AM" />
-          <Avatar text="You have a bug that needs to be fixed." subtext="0:32 AM" />
-          <Avatar text="Andi Lane subscribed to you" subtext="Yesderday 12:39 AM" />
+          <Notification text="You have a bug that needs to be fixed." subtext="5m ago" />
+          <Notification text="New user registered" subtext="1:23 AM" />
+          <Notification text="You have a bug that needs to be fixed." subtext="0:32 AM" />
+          <Notification text="Andi Lane subscribed to you" subtext="Yesderday 12:39 AM" />
         </SidebarContainer>
         <SidebarContainer text="Activities">
-          <Avatar text="Edited the details of Project X" subtext="5m ago" />
-          <Avatar text="ByeWind" subtext="1:32 AM" />
-          <Avatar text="Submitted a bug" subtext="Yesterday 12:39 AM" />
-          <Avatar text="Modified A data in Page X" subtext="Last Thursday 3:34 AM" />
-          <Avatar text="Deleted a page in Project X" subtext="Aug 11" />
+          <Notification text="Edited the details of Project X" subtext="5m ago" />
+          <Notification text="ByeWind" subtext="1:32 AM" />
+          <Notification text="Submitted a bug" subtext="Yesterday 12:39 AM" />
+          <Notification text="Modified A data in Page X" subtext="Last Thursday 3:34 AM" />
+          <Notification text="Deleted a page in Project X" subtext="Aug 11" />
         </SidebarContainer>
         <SidebarContainer text="Contacts">
           <Avatar text="Natali Craig" subtext="" />

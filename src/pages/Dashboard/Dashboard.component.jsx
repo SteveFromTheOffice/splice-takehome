@@ -1,3 +1,4 @@
+import {useEffect, useState} from "react";
 import Table, {TableStatus} from "../../components/Table/Table.component";
 import style from "./Dashboard.module.scss";
 
@@ -10,9 +11,18 @@ const SPENDING_DATA = [
 ];
 
 function Dashboard() {
+  const [spendingData, setSpendingData] = useState([]);
+
+  useEffect(() => {
+    // Simulate API call.
+    setTimeout(() => {
+      setSpendingData(SPENDING_DATA);
+    }, 1000);
+  }, []);
+
   return (
     <main className={style.dashboard}>
-      <Table title="Project Spendings" data={SPENDING_DATA} />
+      <Table title="Project Spendings" data={spendingData} />
     </main>
   );
 }
