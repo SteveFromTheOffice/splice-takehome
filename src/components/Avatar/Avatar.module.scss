@@ -4,6 +4,12 @@
     display: flex;
     gap: 5px;
 
+    > span {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
     img {
       border-radius: 40%;
       height: 24px;
@@ -13,6 +19,7 @@
 
   aside {
     color: rgba(0, 0, 0, 0.4);
+    font-size: 12px;
     margin-left: 29px;
   }
 }
