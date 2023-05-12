@@ -1,8 +1,8 @@
 @import "../../styles/mixins.scss";
 
 .sidebar {
-  background-color: white;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--theme-bgColorPrimary);
+  border: 1px solid var(--theme-bgColorSecondary);
   display: flex;
   flex-direction: column;
   gap: 30px;

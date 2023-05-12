@@ -1,6 +1,7 @@
 .table {
-  background-color: #f7f9fb;
+  background-color: var(--theme-bgColorSecondary);
   border-radius: 16px;
+  color: var(--theme-colorPrimary);
   padding: 24px;
 
   > header {
@@ -18,7 +19,7 @@
     width: 100%;
 
     > thead th {
-      color: gray;
+      color: var(--theme-colorSecondary);
       border-bottom: solid gray 1px;
       text-align: left;
       font-size: 12px;

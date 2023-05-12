@@ -1,6 +1,6 @@
 .notification {
   > aside {
-    color: rgba(0, 0, 0, 0.4);
+    color: var(--theme-colorSecondary);
     font-size: 12px;
     margin-left: 29px;
   }

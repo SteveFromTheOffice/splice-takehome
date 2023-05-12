@@ -16,7 +16,8 @@
   }
 
   aside {
-    background-color: white;
+    background-color: var(--theme-bgColorPrimary);
+    color: var(--theme-colorPrimary);
     overflow-y: auto;
     z-index: 10;
   }
@@ -34,6 +35,8 @@
   }
 
   > main {
+    background-color: var(--theme-bgColorPrimary);
+    color: var(--theme-colorPrimary);
     grid-area: main;
     overflow-y: auto;
   }
