@@ -37,7 +37,12 @@ function Table(props) {
                 <Avatar text={row.manager} />
               </td>
               <td>{row.date}</td>
-              <td>{row.amount}</td>
+              <td>
+                {row.amount.toLocaleString("en-US", {
+                  style: "currency",
+                  currency: "USD",
+                })}
+              </td>
               <td>{row.status}</td>
             </tr>
           ))}

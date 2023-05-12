@@ -8,15 +8,15 @@ function Search() {
     <>
       <form className={style.search}>
         <button>
-          <SearchIcon />
+          <SearchIcon alt="a magnifying glass" />
         </button>
         <input type="text" placeholder="Search" />
         <button>
-          <img src="#"></img>
+          <img src="#" alt=""></img>
         </button>
       </form>
       <div className={style.searchBtn}>
-        <Badge icon={SearchIcon} alt="" />
+        <Badge icon={SearchIcon} alt="a magnifying glass" />
       </div>
     </>
   );
