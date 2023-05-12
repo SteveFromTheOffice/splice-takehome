@@ -4,6 +4,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## TODO / Notes
 
+- Calculator theme toggle removed in favor of one on dashboard header.
+- Sidebar buttons implemented to toggle sidebars on smaller breakpoints.
+
 - Estimated about 30m for boilerplate and 'planning'
 - Estimated 2h for dashboard, styling, flyouts.
 - Estimated 1h for dinner. <3
