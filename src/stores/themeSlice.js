@@ -4,7 +4,7 @@ const MODE_LIGHT = {
   name: "light",
   bgColorPrimary: "#FFF",
   bgColorSecondary: "#F7F9FB",
-  bgColorTertiary: "#FFFFFFAA",
+  bgColorTertiary: "#EAECEE",
   colorPrimary: "#000",
   colorSecondary: "#00000066",
 };
